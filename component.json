@@ -1,8 +1,8 @@
 {
 	"name": "stickem",
-	"version": "1.4.1",
+	"version": "1.4.2",
 	"main": "./jquery.stickem.js",
 	"dependencies": {
-		"jquery": "~1.8.1"
+		"jquery": ">= 1.9.0"
 	}
 }

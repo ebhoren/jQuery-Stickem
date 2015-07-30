@@ -32,6 +32,7 @@
 			endStickClass: 'stickit-end',
 			offset: 0,
 			start: 0,
+			force: false,
 			onStick: null,
 			onUnstick: null
 		},
@@ -74,7 +75,7 @@
 			};
 
 			//If the element is smaller than the window
-			if(_self.windowHeight > item.elemHeight) {
+			if(_self.config.force === true || _self.windowHeight > item.elemHeight) {
 				item.containerHeight = item.$container.outerHeight();
 				item.containerInner = {
 					border: {
